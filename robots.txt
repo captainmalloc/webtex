@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Resources/
+Disallow: /Frameworks/
+Disallow: /WebTex.xcodeproj/
+Disallow: /Classes/

@@ -1,0 +1,52 @@
+\documentclass{slides}
+%%% BEGIN PREAMBLE
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage[dvips]{color}
+\usepackage{graphicx}
+\geometry{screen}
+
+\title{}
+\author{}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%===Slide 0
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%===Slide 1 using COLOR
+%		sample usage:  \textcolor{blue}{Here you put text.}
+\begin{slide}
+\begin{itemize}
+
+\item You can put figures and tables into slides,
+	using the \verb9\includegraphics{}9 command
+	and the {\tt tabular} environment,
+	{\em but}
+
+\item you can't use the {\bf figure} and
+	{\bf table} environments;
+	\LaTeX{} won't number and caption
+	figures and tables.
+
+\item Predefined colors are          % COLORS!!!!
+        \textcolor{blue}{blue}, \textcolor{red}{red}, \textcolor{black}{black},
+        \colorbox{blue}{\textcolor{white}{white}},
+        \textcolor{cyan}{cyan}, \textcolor{magenta}{magenta},
+        \textcolor{yellow}{yellow}, \textcolor{green}{green}.
+
+        Define colors?  Colored formulae?  You bet!
+          \verb2\definecolor{darkgreen}{rgb}{0,0.4,0}2
+                \definecolor{darkgreen}{rgb}{0,0.4,0}
+        \\ \textcolor{darkgreen}{$A = \pi r^2$}:
+
+        $$
+        \textcolor{darkgreen}{\int_0^r 2\pi x \, dx = \pi r^2.}
+        $$
+
+\end{itemize}
+\end{slide}
+
+\end{document}
